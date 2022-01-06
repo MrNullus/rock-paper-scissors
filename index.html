@@ -10,37 +10,52 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <!-- header -->
         <header>
             <h1>Rock Paper Scissors</h1>
         </header>
+        <!-- end of header -->
 
-        <div class="score-board">
-            <div id="user-label" class="badge">user</div>
-            <div id="computer-label" class="badge">comp</div>
+        <!-- main -->
+        <main>
+            <!-- score board -->
+            <div class="score-board">
+                <div id="user-label" class="badge">user</div>
+                <div id="computer-label" class="badge">comp</div>
 
-            <span id="user-score">0</span>:<span id="computer-score">0</span>
-        </div>
-
-        <div class="result">
-            <p>Paper cover rock. You win!</p>
-        </div>
-
-        <div class="choices">
-            <div class="choice">
-                <img src="img/rock.png" alt="rock" id="r" />
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
             </div>
-            <div class="choice">
-                <img src="img/paper.png" alt="paper" id="p" />
-            </div>
-            <div class="choice">
-                <img src="img/scissors.png" alt="scissors" id="s"/>
-            </div>
-        </div>
 
-        <p id="action-message">Make your move</p>
+            <!-- result -->
+            <div class="result">
+                <p>Paper cover rock. You win!</p>
+            </div>
 
+            <!-- action message -->
+            <p id="action-message">Make your move</p>
+
+            <!-- choices -->
+            <div class="choices">
+                <!-- single choice -->
+                <div class="choice" id="r">
+                    <img src="img/rock.png" alt="rock" />
+                </div>
+
+                <!-- single choice -->
+                <div class="choice" id="p">
+                    <img src="img/paper.png" alt="paper" />
+                </div>
+
+                <!-- single choice -->
+                <div class="choice" id="s">
+                    <img src="img/scissors.png" alt="scissors" />
+                </div>
+            </div>
+            <!-- end of choices -->
+        </main>
+        <!-- end of main -->
 
         <!-- javascript file -->
-        <script src="app.js"></script>
+        <script src="app.js" charset="utf-8"></script>
     </body>
 </html>
